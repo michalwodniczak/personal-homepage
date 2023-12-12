@@ -1,12 +1,8 @@
-import { Container } from "./common/Container";
-import { Header } from "./Header";
-
+import { PersonalHomepage } from "./features/PersonalHomepage";
 function App() {
   return (
-    <Container>
-      <Header />
-    </Container>
+    <PersonalHomepage />
   );
-}
+};
 
 export default App;
