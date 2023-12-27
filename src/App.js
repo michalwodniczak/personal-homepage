@@ -1,7 +1,12 @@
 import { PersonalHomepage } from "./features/PersonalHomepage";
+import { Provider } from "react-redux";
+import store from "./store";
+
 function App() {
   return (
-    <PersonalHomepage />
+    <Provider store={store}>
+      <PersonalHomepage />
+    </Provider>
   );
 };
 
