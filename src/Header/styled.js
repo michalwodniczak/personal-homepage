@@ -7,10 +7,11 @@ export const Wrapper = styled.div`
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         flex-direction:column;
         margin-bottom: 16px;
-    }
+    };
 `;
 
 export const Image = styled.img`
+   margin-left:76px;
    width: 398px;
    height: 398px;
    border-radius:50%;
@@ -18,7 +19,8 @@ export const Image = styled.img`
    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
     width: 133px;
     height: 133px;
-   }
+    margin-left:20px;
+   };
 `;
 
 export const Container = styled.div`
@@ -29,7 +31,7 @@ export const Container = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         margin-left: 0;
-    }
+    };
 `;
 
 export const Paragraph = styled.p`
@@ -38,8 +40,6 @@ export const Paragraph = styled.p`
     text-transform: uppercase;
     line-height: 130%;
     color:${({ theme }) => theme.color.slateGray};
-
-
 `;
 
 export const Title = styled.h1`
