@@ -9,5 +9,9 @@ export const theme = {
         anakiwa: "#8CC2FF",
         dustyGray: "#d1d5da",
         lightBlue: "rgba(3, 102, 214, 0.20)"
+    },
+    breakpoints:{
+        smallPhone:360,
+        tablet: 900,
     }
 };
