@@ -10,8 +10,10 @@ export const theme = {
         dustyGray: "#d1d5da",
         lightBlue: "rgba(3, 102, 214, 0.20)"
     },
-    breakpoints:{
-        smallPhone:360,
-        tablet: 900,
+    breakpoints: {
+        smallPhone: 365,
+        phone: 767,
+        smallLaptop: 1200,
+        laptop: 1400,
     }
 };
