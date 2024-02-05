@@ -8,17 +8,14 @@ export const Wrapper = styled.div`
     gap: 32px;
 
     @media (max-width: ${({theme}) => theme.breakpoints.laptop}px){
-        gap:10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:14px;
     };
 
-    @media (max-width: ${({theme}) => theme.breakpoints.smallLaptop}px){
-        gap:10px;
-    }
-    
     @media (max-width: ${({theme}) => theme.breakpoints.phone}px){
         grid-template-columns: 1fr;
         gap:16px;
     };
-
 
 `;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledPortfolioItem = styled.div`
     width: 624px;
     height: 354px;
-    margin: 32px;
+    margin:0 auto;
     color: ${({ theme }) => theme.color.mineShaft};
     border: solid 6px ${({ theme }) => theme.color.dustyGray};
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
@@ -13,11 +13,26 @@ export const StyledPortfolioItem = styled.div`
     &:hover{
         border: solid 6px ${({ theme }) => theme.color.lightBlue};
     };
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px){
+        max-width:580px;
+        width:100%;
+    };
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
-        width:288px;
-        margin:0 auto;
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallLaptop}px){
+        max-width: 520px;
     }
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
+        max-width:700px;
+        width: 100%;
+        padding:10px;
+    };
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
+        max-width:360px;
+        width: 100%;
+    };
 `;
 
 export const Title = styled.h3`
