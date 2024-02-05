@@ -8,22 +8,22 @@ export const Wrapper = styled.div`
     flex-direction: column;
     padding: 80px;
 `;
+
 export const Title = styled.h2`
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 1px;
     color: ${({ theme }) => theme.color.mineShaft};
     padding: 20px;
-
 `;
 
 const rotate = keyframes`
      from {
       transform: rotate(0deg);
-    }
+    };
     to {
       transform: rotate(360deg);
-    }
+    };
 `;
 
 export const Loader = styled(circle)`
@@ -33,5 +33,5 @@ animation: ${rotate} infinite 800ms linear;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         width:80px;
-}
+    };
 `;
