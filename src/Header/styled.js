@@ -4,8 +4,11 @@ export const Wrapper = styled.div`
     display:flex;
     margin-bottom:63px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
-        flex-direction:column;
+    @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
+        flex-direction: column;
+    }
+   
+    @media (min-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         margin-bottom: 16px;
     };
 `;
@@ -16,7 +19,11 @@ export const Image = styled.img`
    height: 398px;
    border-radius:50%;
 
-   @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
+   @media (max-width:${({ theme }) => theme.breakpoints.tablet}px){
+    width: 300px;
+   }
+
+   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
     width: 133px;
     height: 133px;
     margin-left:20px;
@@ -29,7 +36,7 @@ export const Container = styled.div`
     flex-direction: column;
     padding:20px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         margin-left: 0;
     };
 `;
@@ -61,7 +68,7 @@ export const Description = styled.p`
     letter-spacing: 1px;
     color: ${({ theme }) => theme.color.slateGray};
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         font-size:17px;
         letter-spacing: 0.85px;
     }
@@ -80,7 +87,7 @@ export const Button = styled.a`
     border: 1px solid ${({ theme }) => theme.color.iron};
     border-radius: 5px;
 
-    @media (max-width: ${({theme})=> theme.breakpoints.smallPhone}px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         width:138px;
         font-size: 18px;
         gap:12px;

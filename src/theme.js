@@ -13,6 +13,7 @@ export const theme = {
     breakpoints: {
         smallPhone: 365,
         phone: 767,
+        tablet: 934,
         smallLaptop: 1200,
         laptop: 1400,
     }
