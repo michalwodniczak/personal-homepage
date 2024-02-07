@@ -1,12 +1,19 @@
 import { PersonalHomepage } from "./features/PersonalHomepage";
-import { Provider } from "react-redux";
-import store from "./store";
+import { useSelector } from "react-redux";
+import { ThemeProvider } from "styled-components"
+import { GlobalStyle } from "./globalStyle";
+import { selectTheme } from "./Header/ThemeButton/themeSwitchSlice";
+import { themeDark, themeLight } from "./theme"
+
 
 function App() {
+  const theme = useSelector(selectTheme);
+
   return (
-    <Provider store={store}>
+    <ThemeProvider theme={theme ? themeDark : themeLight}>
+      <GlobalStyle />
       <PersonalHomepage />
-    </Provider>
+    </ThemeProvider>
   );
 };
 
