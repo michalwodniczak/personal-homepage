@@ -1,11 +1,11 @@
-import { Wrapper, Paragraph, Title, Text, Icons, Link } from "./styled";
+import { Wrapper, Paragraph, Email, Text, Icons, Link } from "./styled";
 import { aboutMe } from "../common/aboutMe";
 import { socials } from "./socials";
 
 export const Footer = () => (
     <Wrapper>
         <Paragraph>let's talk</Paragraph>
-        <Title>{aboutMe.mail}</Title>
+        <Email href={aboutMe.url}>{aboutMe.mail}</Email>
         <Text>{aboutMe.footerDescription}</Text>
         <Icons>
             {socials.map(({ name, url, Icon }) => (

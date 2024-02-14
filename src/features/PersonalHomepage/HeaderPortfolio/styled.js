@@ -11,7 +11,7 @@ export const Title = styled.h2`
     font-size:30px;
     font-weight: 900;
     letter-spacing: 1.5px;
-    color:${({ theme }) => theme.color.mineShaft};
+    color:${({ theme }) => theme.color.sectionTitle};
 
     @media (max-width: ${({theme}) => theme.breakpoints.smallPhone}px){
         font-size: 18px;
@@ -33,7 +33,7 @@ export const Paragraph = styled.span`
     font-size:20px;
     line-height: 140%;
     letter-spacing: 1px;
-    color:${({theme}) => theme.color.mineShaft};
+    color:${({theme}) => theme.color.paragraph};
 
     @media (max-width: ${({theme}) => theme.breakpoints.smallPhone}px){
         font-size: 17px;

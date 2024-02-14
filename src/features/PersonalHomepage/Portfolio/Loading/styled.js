@@ -13,7 +13,7 @@ export const Title = styled.h2`
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 1px;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.title};
     padding: 20px;
 `;
 

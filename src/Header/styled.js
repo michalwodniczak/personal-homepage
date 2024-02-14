@@ -46,7 +46,7 @@ export const Paragraph = styled.p`
     font-weight: 700;
     text-transform: uppercase;
     line-height: 130%;
-    color:${({ theme }) => theme.color.slateGray};
+    color:${({ theme }) => theme.color.paragraph};
 `;
 
 export const Title = styled.h1`
@@ -54,7 +54,7 @@ export const Title = styled.h1`
     font-size: 38px;
     font-weight: 900;
     letter-spacing: 1.9px;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.title};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         font-size: 22px;
@@ -66,7 +66,7 @@ export const Description = styled.p`
     font-size:20px;
     line-height: 140%;
     letter-spacing: 1px;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.description};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         font-size:17px;
@@ -77,15 +77,19 @@ export const Button = styled.a`
     display: inline-flex;
     width: 154px;
     font-size:20px;
-    color:${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.buttonColor};
     text-decoration: none;
     padding:12px 16px;
     justify-content: center;
     gap:16px;
     align-items: center;
-    background-color: ${({ theme }) => theme.color.scienceBlue};
-    border: 1px solid ${({ theme }) => theme.color.iron};
+    background-color: ${({ theme }) => theme.color.buttonBackground};
+    border: medium;
     border-radius: 5px;
+
+    &:hover{
+        box-shadow: 0px 0px 0px 2px rgba(0, 160, 255, 1);
+    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         width:138px;

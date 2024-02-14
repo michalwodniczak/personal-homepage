@@ -4,14 +4,14 @@ export const StyledPortfolioItem = styled.div`
     width: 624px;
     height: 354px;
     margin:0 auto;
-    color: ${({ theme }) => theme.color.mineShaft};
-    border: solid 6px ${({ theme }) => theme.color.dustyGray};
+    background-color: ${({ theme }) => theme.color.portfolioItemBackground};
+    border: solid 6px rgba(209, 213, 218, 0.3);
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     border-radius: 4px;
     padding:24px;
     
     &:hover{
-        border: solid 6px ${({ theme }) => theme.color.lightBlue};
+        border: solid 6px rgb(209, 213, 250);
     };
     
     @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px){
@@ -39,7 +39,7 @@ export const Title = styled.h3`
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 1.2px;
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.portfolioItemTitle};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         font-size: 16px;
@@ -52,6 +52,7 @@ export const Description = styled.p`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
+    color: ${({theme}) => theme.color.portfolioItemDescription};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         font-size: 14px;
@@ -70,7 +71,7 @@ export const Paragraph = styled.p`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.paragraph};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         font-size: 14px;
@@ -79,5 +80,5 @@ export const Paragraph = styled.p`
 `;
 
 export const StyledLink = styled.a`
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.portfolioLink};
 `;

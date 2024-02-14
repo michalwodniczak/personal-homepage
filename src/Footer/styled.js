@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
     max-width: 691px;
-    background-color: ${({ theme }) => theme.color.whiteLiliac};
+    background-color: ${({ theme }) => theme.color.footerBackground};
     padding:32px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
@@ -17,13 +17,19 @@ export const Paragraph = styled.p`
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
-    color:${({ theme }) => theme.color.slateGray};
+    color:${({ theme }) => theme.color.paragraph};
 `;
-export const Title = styled.h2`
+export const Email = styled.a`
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 1.6px;
-    color:${({ theme }) => theme.color.mineShaft};
+    text-decoration: none;
+    color:${({ theme }) => theme.color.title};
+
+    &:hover{
+        transition: 0.3s;
+        color: ${({theme}) => theme.color.emailHover}
+    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         font-size: 18px;
@@ -35,7 +41,7 @@ export const Text = styled.p`
     font-size: 18px;
     letter-spacing: 0.9px;
     line-height: 140%;
-    color:${({ theme }) => theme.color.mineShaft};
+    color:${({ theme }) => theme.color.paragraph};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         font-size: 14px;
@@ -50,19 +56,19 @@ export const Icons = styled.div`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.footerLink};
     transition: 0.3s;
     
     &:visited{
-        color: ${({ theme }) => theme.color.mineShaft};
+        color: ${({ theme }) => theme.color.footerLink};
     };
     
     &:focus{
-        color: ${({ theme }) => theme.color.scienceBlue};
+        color: ${({ theme }) => theme.color.footerLinkActive};
     };
     
     &:hover{
-        color: ${({ theme }) => theme.color.scienceBlue};
+        color: ${({ theme }) => theme.color.footerLinkActive};
     };
 `;
 

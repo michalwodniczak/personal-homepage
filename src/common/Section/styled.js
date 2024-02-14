@@ -8,16 +8,17 @@ export const Wrapper = styled.div`
     border-radius:4px;
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     padding: 32px;
+    background-color: ${({ theme }) => theme.color.sectionBackground};
 `;
 
 export const Header = styled.h2`
     margin:20px auto;
     padding-bottom:15px;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.sectionTitle};
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 1.5px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.iron};
+    border-bottom: 1px solid ${({ theme }) => theme.color.sectionTitleBorder};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         font-size: 18px;
@@ -45,19 +46,18 @@ export const List = styled.ul`
         gap:12px;
         font-size: 14px;
         letter-spacing: 0.7px;
-    }
+    };
     
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         grid-template-columns:1fr;
-     
     };
 `;
 
 export const ListItem = styled.li`
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.listItem};
 `;
 
 export const Image = styled(elipse)`
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.listOrder};
     margin-right: 16px;
 `;
