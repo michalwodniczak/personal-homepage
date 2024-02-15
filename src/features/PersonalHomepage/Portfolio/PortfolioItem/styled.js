@@ -19,19 +19,10 @@ export const StyledPortfolioItem = styled.div`
         width:100%;
     };
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallLaptop}px){
-        max-width: 520px;
-    }
-    
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         max-width:700px;
         width: 100%;
         padding:10px;
-    };
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
-        max-width:360px;
-        width: 100%;
     };
 `;
 
