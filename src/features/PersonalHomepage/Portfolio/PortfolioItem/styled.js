@@ -16,6 +16,12 @@ export const StyledPortfolioItem = styled.div`
     
     @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px){
         width:100%;
+        max-width: 700px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
+        width:100%;
+        max-width: 320px;
     };
 `;
 
@@ -36,7 +42,7 @@ export const Description = styled.p`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
-    color: ${({theme}) => theme.color.portfolioItemDescription};
+    color: ${({ theme }) => theme.color.portfolioItemDescription};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         font-size: 14px;
