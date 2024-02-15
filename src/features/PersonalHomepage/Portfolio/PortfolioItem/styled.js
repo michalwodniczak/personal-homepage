@@ -55,6 +55,10 @@ export const LinkWrapper = styled.div`
     grid-template-columns:auto 1fr;
     align-items: center;
     gap:8px;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.smallPhone}px){
+        gap:0;
+    }
 `
 export const Paragraph = styled.p`
     padding: 10px;
@@ -71,4 +75,8 @@ export const Paragraph = styled.p`
 
 export const StyledLink = styled.a`
     color: ${({ theme }) => theme.color.portfolioLink};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
+        font-size: 14px;
+    }
 `;
