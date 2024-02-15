@@ -58,6 +58,8 @@ export const LinkWrapper = styled.div`
 
     @media (max-width: ${({theme}) => theme.breakpoints.smallPhone}px){
         gap:0;
+        width: 100%;
+        max-width: 320px;
     }
 `
 export const Paragraph = styled.p`
