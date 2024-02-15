@@ -3,10 +3,14 @@ import { ReactComponent as sunIcon } from "./brightness.svg";
 
 export const Wrapper = styled.div`
     display: flex;
-    flex-direction:flex-end;
     justify-content: flex-end;
     align-items: center;
     gap:15px;
+    padding:0 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallLaptop}px){
+        padding:0 10px;
+    }
 `;
 export const Button = styled.button`
     display:flex;
@@ -15,7 +19,7 @@ export const Button = styled.button`
     width: 48px;
     height: 26px;
     border:1px solid ${({ theme }) => theme.color.themeBorderButton};
-    background-color: ${({theme}) => theme.color.themeBackground};
+    background-color: ${({ theme }) => theme.color.themeBackground};
     border-radius: 30px;
     cursor:pointer;
 `;
