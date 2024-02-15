@@ -5,7 +5,7 @@ export const MainStyled = styled.main`
     gap:72px;
     flex-direction: column;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.tablet}px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px){
        margin:0 auto;
-    }
-`
+    };
+`;
