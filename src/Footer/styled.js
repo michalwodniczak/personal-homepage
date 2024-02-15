@@ -6,9 +6,7 @@ export const Wrapper = styled.footer`
     padding:32px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
-        max-width: 320px;
         padding: 10px;
-        margin: 0 auto;
     };
 `;
 
@@ -28,7 +26,7 @@ export const Email = styled.a`
 
     &:hover{
         transition: 0.3s;
-        color: ${({theme}) => theme.color.emailHover}
+        color: ${({ theme }) => theme.color.emailHover}
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
