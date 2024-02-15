@@ -51,7 +51,7 @@ export const themeLight = {
         errorButton: colors.scienceBlue,
     },
     breakpoints: {
-        smallPhone: breakpoints.smallLaptop,
+        smallPhone: breakpoints.smallPhone,
         phone: breakpoints.phone,
         tablet: breakpoints.tablet,
         smallLaptop: breakpoints.smallLaptop,
@@ -90,7 +90,7 @@ export const themeDark = {
         errorButton: colors.scienceBlue,
     },
     breakpoints: {
-        smallPhone: breakpoints.smallLaptop,
+        smallPhone: breakpoints.smallPhone,
         phone: breakpoints.phone,
         tablet: breakpoints.tablet,
         smallLaptop: breakpoints.smallLaptop,
