@@ -77,8 +77,9 @@ export const Paragraph = styled.p`
 
 export const StyledLink = styled.a`
     color: ${({ theme }) => theme.color.portfolioLink};
+    word-break: break-word;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         font-size: 14px;
-    }
+    };
 `;
