@@ -18,12 +18,6 @@ export const StyledPortfolioItem = styled.div`
         max-width:580px;
         width:100%;
     };
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
-        max-width:700px;
-        width: 100%;
-        padding:10px;
-    };
 `;
 
 export const Title = styled.h3`
