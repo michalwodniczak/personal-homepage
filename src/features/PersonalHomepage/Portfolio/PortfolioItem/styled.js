@@ -15,7 +15,6 @@ export const StyledPortfolioItem = styled.div`
     };
     
     @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px){
-        max-width:580px;
         width:100%;
     };
 `;
