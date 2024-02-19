@@ -1,5 +1,5 @@
 # Demo:
-[https://github.com/widmo200/personal-homepage]
+https://github.com/widmo200/personal-homepage
 
 ![Demo review](public/preview.gif)
 
