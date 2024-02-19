@@ -32,6 +32,6 @@ height: 160px;
 animation: ${rotate} infinite 800ms linear;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
-        width:80px;
+        width: 80px;
     };
 `;

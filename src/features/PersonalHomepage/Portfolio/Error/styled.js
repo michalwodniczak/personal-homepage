@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h3`
-    font-size:24px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
     color: ${({ theme }) => theme.color.title};
@@ -32,9 +32,9 @@ export const Paragraph = styled.p`
     color: ${({ theme }) => theme.color.paragraph};
 `
 export const Link = styled.a`
-    margin-top:32px;
+    margin-top: 32px;
     display: inline-block;
-    border-radius:5px;
+    border-radius: 5px;
     width: 168px;
     padding: 16px 12px;
     text-align: center;

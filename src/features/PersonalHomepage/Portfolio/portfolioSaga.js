@@ -1,5 +1,5 @@
-import { call, put, takeLatest, delay } from "redux-saga/effects"
-import { getRespositores } from "./getPortfolio"
+import { call, put, takeLatest, delay } from "redux-saga/effects";
+import { getRespositores } from "./getPortfolio";
 import { fetchRepo, setRepo, setStatus } from "./portfolioSlice";
 
 

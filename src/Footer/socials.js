@@ -12,5 +12,5 @@ export const socials = [
         name: "linkedin",
         url: "https://www.linkedin.com/",
         Icon: IconStyle(linkedinLogo)
-    }
-]
+    },
+];

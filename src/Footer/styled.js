@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.footer`
     max-width: 691px;
     background-color: ${({ theme }) => theme.color.footerBackground};
-    padding:32px;
+    padding: 32px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         padding: 10px;
@@ -15,14 +15,14 @@ export const Paragraph = styled.p`
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
-    color:${({ theme }) => theme.color.paragraph};
+    color: ${({ theme }) => theme.color.paragraph};
 `;
 export const Email = styled.a`
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 1.6px;
     text-decoration: none;
-    color:${({ theme }) => theme.color.title};
+    color: ${({ theme }) => theme.color.title};
 
     &:hover{
         transition: 0.3s;
@@ -39,7 +39,7 @@ export const Text = styled.p`
     font-size: 18px;
     letter-spacing: 0.9px;
     line-height: 140%;
-    color:${({ theme }) => theme.color.paragraph};
+    color: ${({ theme }) => theme.color.paragraph};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         font-size: 14px;
@@ -48,9 +48,9 @@ export const Text = styled.p`
 `;
 
 export const Icons = styled.div`
-    margin-top:56px;
+    margin-top: 56px;
     display: flex;
-    gap:20px;
+    gap: 20px;
 `;
 
 export const Link = styled.a`

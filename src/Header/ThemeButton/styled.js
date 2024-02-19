@@ -5,27 +5,27 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap:15px;
+    gap: 15px;
     padding:0 40px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallLaptop}px){
-        padding:0 10px;
+        padding: 0 10px;
     }
 `;
 export const Button = styled.button`
-    display:flex;
+    display: flex;
     align-items: center;
-    padding:3px;
+    padding: 3px;
     width: 48px;
     height: 26px;
-    border:1px solid ${({ theme }) => theme.color.themeBorderButton};
+    border: 1px solid ${({ theme }) => theme.color.themeBorderButton};
     background-color: ${({ theme }) => theme.color.themeBackground};
     border-radius: 30px;
-    cursor:pointer;
+    cursor: pointer;
 `;
 
 export const Paragraph = styled.p`
-    font-size:12px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
@@ -38,9 +38,9 @@ export const Paragraph = styled.p`
 
 export const IconWrapper = styled.span`
     background-color: ${({ theme }) => theme.color.themeIconWrapper};
-    padding:3px;
+    padding: 3px;
     transition: transform 0.3s;
-    display:flex;
+    display: flex;
     border-radius: 50%;
     
      ${({ moveTheButtonToTheRight }) =>
