@@ -12,6 +12,7 @@ export const StyledPortfolioItem = styled.div`
     
     &:hover{
         border: solid 6px rgb(209, 213, 250);
+        cursor: pointer;
     };
     
     @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px){
@@ -56,7 +57,7 @@ export const LinkWrapper = styled.div`
     align-items: center;
     gap:8px;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.smallPhone}px){
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
         gap:0;
         width: 100%;
         max-width: 320px;
