@@ -1,7 +1,7 @@
 # Demo:
 [https://github.com/widmo200/personal-homepage]
 
-![Demo review](.public/preview.gif)
+![Demo review](public/preview.gif)
 
 ## General Info
 Personal Homepage is a simple website design created using HTML, CSS and JavaScript. This is an intuitive solution that allows you to quickly create a personalized business card online. It is designed to be flexible and customizable, allowing users to quickly personalize the content and appearance of the site.
