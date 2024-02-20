@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledPortfolioItem = styled.div`
     width: 624px;
-    height: 354px;
     margin:0 auto;
     background-color: ${({ theme }) => theme.color.portfolioItemBackground};
     border: solid 6px rgba(209, 213, 218, 0.3);
