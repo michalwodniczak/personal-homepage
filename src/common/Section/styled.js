@@ -41,15 +41,11 @@ export const List = styled.ul`
     gap: 8px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns: 1fr;
         margin-left: -40px;
         gap: 12px;
         font-size: 14px;
         letter-spacing: 0.7px;
-    };
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
-        grid-template-columns: 1fr;
     };
 `;
 
