@@ -1,15 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchRepo, selectRepositores, selectStatus } from "./portfolioSlice";
+import { fetchRepo, selectStatus } from "./portfolioSlice";
 import { Loading } from "./Loading";
 import { ErrorPage } from "./Error";
-import { Wrapper } from "./styled";
-import { PortfolioItem } from "./PortfolioItem";
+import { Repositories } from "./Repositories";
 
 export const Portfolio = () => {
-
     const repoStatus = useSelector(selectStatus);
-    const repositories = useSelector(selectRepositores);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -22,26 +19,7 @@ export const Portfolio = () => {
         case "error":
             return <ErrorPage />;
         case "success":
-            try {
-                return (
-                    <>
-                        <Wrapper>
-                            {repositories ? repositories.map((repository) => (
-                                <PortfolioItem
-                                    key={repository.id}
-                                    title={repository.name}
-                                    description={repository.description}
-                                    linkDemo={repository.homepage}
-                                    linkRepo={repository.html_url}
-                                />
-                            )) : ""}
-                        </Wrapper>
-                    </>
-                )
-            }
-            catch {
-                return "";
-            }
+            return <Repositories />
         default:
             return null;
     };
