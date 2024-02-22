@@ -8,6 +8,7 @@ export const StyledPortfolioItem = styled.div`
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     border-radius: 4px;
     padding:24px;
+    transition: 0.3s;
     
     &:hover{
         border: solid 6px rgb(209, 213, 250);

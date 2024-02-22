@@ -86,6 +86,7 @@ export const Button = styled.a`
     background-color: ${({ theme }) => theme.color.buttonBackground};
     border: medium;
     border-radius: 5px;
+    transition: 0.3s;
 
     &:hover{
         box-shadow: 0px 0px 0px 2px rgba(0, 160, 255, 1);
