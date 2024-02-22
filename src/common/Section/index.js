@@ -1,16 +1,16 @@
 import { Header, Wrapper, Body, List, ListItem, Image } from "./styled";
 
-export const Section = ({ title, body }) => (
+export const Section = ({ title, skillList }) => (
     <Wrapper>
         <Header>{title}</Header>
         <Body>
             <List>
-                {body ? body.map((skill) => (
+                {skillList.map((skill) => (
                     <ListItem key={skill}>
                         <Image />
                         {skill}
                     </ListItem>
-                )) : ""}
+                ))}
             </List>
         </Body>
     </Wrapper>
