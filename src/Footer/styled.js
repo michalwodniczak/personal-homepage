@@ -23,9 +23,9 @@ export const Email = styled.a`
     letter-spacing: 1.6px;
     text-decoration: none;
     color: ${({ theme }) => theme.color.title};
+    transition: 0.3s;
 
     &:hover{
-        transition: 0.3s;
         color: ${({ theme }) => theme.color.emailHover}
     }
 
