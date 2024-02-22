@@ -7,10 +7,6 @@ export const Wrapper = styled.div`
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}px){
         flex-direction: column;
     };
-   
-    @media (min-width: ${({ theme }) => theme.breakpoints.smallPhone}px){
-        margin-bottom: 16px;
-    };
 `;
 
 export const Image = styled.img`
