@@ -9,7 +9,7 @@ export const Footer = () => (
         <Text>{aboutMe.footerDescription}</Text>
         <Icons>
             {socials.map(({ name, url, Icon }) => (
-                <Link href={url} title={name} target="_blank" key={name}>
+                <Link href={url} title={name} target="_blank" key={name} rel="noreferrer">
                     <Icon />
                 </Link>
             ))}
