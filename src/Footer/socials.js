@@ -10,7 +10,7 @@ export const socials = [
     },
     {
         name: "linkedin",
-        url: "https://www.linkedin.com/",
+        url: "https://www.linkedin.com/in/micha%C5%82-wodniczak/",
         Icon: IconStyle(linkedinLogo)
     },
 ];
