@@ -5,7 +5,7 @@ import { ReactComponent as linkedinLogo } from "./linkedinLogo.svg"
 export const socials = [
     {
         name: "github",
-        url: "https://github.com/widmo200",
+        url: "https://github.com/michalwodniczak",
         Icon: IconStyle(githubLogo)
     },
     {
