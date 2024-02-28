@@ -24,8 +24,10 @@ export const skills = [
 ];
 
 export const skillsToLearn = [
+    "Gatsby",
     "React Context",
     "Node.js",
     "TypeScript",
     "Unit testing",
+    "TanStack Query"
 ];
